@@ -1,663 +1,237 @@
 <!DOCTYPE html>
-<html>
-  	<head>
-    	<link rel="icon" href="https://i.ibb.co/3RCzP0V/pixil-frame-0.png"/>
-		
-		<!-- HTML Meta Tags -->
-		<title>Jason Ding</title>
-		<meta name="description" content="Jason Ding's Personal Website" />
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- Facebook Meta Tags -->
-		<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/" />
-		<meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
-		<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Jason Ding" />
-		<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Jason Ding's Personal Website" />
-		<meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://i.ibb.co/JCNSRdV/Screen-Shot-2022-10-26-at-3-34-26-PM.png" />
+	<title>Experiences | Jason Ding</title>
+	<meta name="description" content="Internships, research, and clubs Jason Ding has been part of." />
+	<meta name="author" content="Jason Ding" />
 
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta property="twitter:domain" content="" />
-		<meta property="twitter:url" content="/" />
-		<meta name="twitter:title" content="Jason Ding" />
-		<meta name="twitter:description" content="Jason Ding's Personal Website" />
-		<meta name="twitter:image" content="https://i.ibb.co/JCNSRdV/Screen-Shot-2022-10-26-at-3-34-26-PM.png" />
+	<link rel="icon" href="/assets/img/favicon.png" />
 
-		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
-			
+	<meta property="og:url" content="/experiences" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Experiences | Jason Ding" />
+	<meta property="og:description" content="Internships, research, and clubs Jason Ding has been part of." />
+	<meta property="og:image" content="/assets/img/portrait.png" />
+	<meta name="twitter:card" content="summary_large_image" />
 
-		<meta http-equiv="content-type" content="text/html;
-		charset=windows-1252">
-		<meta name="description" content="Jason Ding's Personal Website">
-		<meta name="keywords" content="Jason Ding, Jason, Ding">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="Jason Ding">
+	<script>
+		(function () {
+			try {
+				var t = localStorage.getItem('theme');
+				if (t !== 'light' && t !== 'dark') {
+					t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				}
+				document.documentElement.setAttribute('data-theme', t);
+			} catch (e) {}
+		})();
+	</script>
 
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-		<!-- <script  src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/dcbe114e82.js" crossorigin="anonymous"></script>
 
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+	<link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+	<header id="site-nav"></header>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-		<script src="https://kit.fontawesome.com/dcbe114e82.js" crossorigin="anonymous"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
-		integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
-		crossorigin="anonymous"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-		crossorigin="anonymous"></script>
-
-		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
-
-		<style>
-			.main {
-				padding: 16px;
-				margin-top: 0px;
-				margin-left: 20%; /* Same as the width of the sidenav */
-			}
-			
-			.collapsible {
-				background-color: #777;
-				color: white;
-				cursor: pointer;
-				padding: 18px;
-				width: 100%;
-				border: none;
-				text-align: left;
-				outline: none;
-				font-size: 15px;
-			}
-
-			.active, .collapsible:hover {
-				background-color: #555;
-			}
-
-			.collapsible:after {
-				content: '\002B';
-				color: white;
-				font-weight: bold;
-				float: right;
-				margin-left: 5px;
-			}
-
-			.active:after {
-				content: "\2212";
-			}
-
-			.content {
-				padding: 3px 18px;
-				max-height: 0;
-				overflow: hidden;
-				transition: max-height 0.2s ease-out;
-				background-color: #f1f1f1;
-			}
-			
-			img_logo { 
-				width: 100px; height: 100px 
-			}
-
-			.border{ 
-				border: 2px solid black; 
-				margin: 5px
-			}
-
-			body {
-				padding-top: 10px;
-			}
-
-			.navbar {
-				overflow: hidden;
-				background-color: #F5F5F5;
-				position: fixed;
-				top: 0;
-				width: 100%;
-				margin-bottom: 50px !important;
-			}
-
-			.brand {
-				position: absolute;
-				left: 50%;
-				margin-left: -50px !important;  /* 50% of your logo width */
-				display: block;
-			}
-
-			.navbar a {
-				float: left;
-				color: #272727;
-				display: block;
-				text-align: center;
-				padding: 14px 5px;
-			}
-
-			.navbar a:hover {
-				background: #ddd;
-				color: #272727;
-			}
-
-			.special-a:link {
-					text-decoration: none;
-					color: #2596be;
-			}
-
-			.special-a:visited {
-				text-decoration: none;
-				color: #2596be;
-			}
-
-			.special-a:hover {
-				text-decoration: none;
-				color: #12637f;
-			}
-
-			.special-a:active {
-				text-decoration: none;
-				color: #12637f;
-			}
-
-			.download-icon:before { 
-				content: "\f019";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			} 
-
-			.sidenav {
-				height: 100%;
-				width: 20%;
-				position: fixed;
-				z-index: 1;
-				top: 0;
-				left: 0;
-				background-color: #fafafa;
-				overflow-x: hidden;
-				padding-top: 12%;
-				padding-left: 3%;
-			}
-
-			.sidenav a {
-				text-decoration: none;
-				color: #2596be;
-				display: block;
-			}
-
-			.sidenav a:hover {
-				color: #12637f;
-			}
-
-			.icon-translator:before { 
-				content: "\f1ab";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			} 
-
-			.icon-google:before { 
-				content: "\f1a0";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			} 
-
-			.icon-github:before { 
-				content: "\f09b";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			}
-
-			.icon-linkedin:before { 
-				content: "\f08c";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			}
-
-			.icon-email:before { 
-				content: "\f0e0";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			}
-
-			.icon-globe:before { 
-				content: "\f0ac";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			}
-
-			.icon-discord:before { 
-				content: "\f392";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			}
-
-			.icon-school:before { 
-				content: "\f549";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			}
-
-			.icon-grad:before { 
-				content: "\f19d";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			}
-
-			.icon-book:before { 
-				content: "\f02d";
-				font-family: 'FontAwesome';
-				speak: none;
-				font-style: normal;
-				font-weight: normal;
-				font-variant: normal;
-				text-transform: none;
-				line-height: 1;
-				position: relative;
-				-webkit-font-smoothing: antialiased;
-				margin-left: 0px; 
-				margin-right: 10px; 
-				color: black;
-			}
-		</style>
-  	</head>
-  
-  	<body>
-		<script>
-			$(document).ready(function () {
-				var typed = new Typed('.sweet', {
-					strings: ['Have a good brain teaser? Feel free to send me it at jasonding@berkeley.edu!^5000',
-							  'Trained the first public Interlingua-English Translator. Try it out in the "Projects" tab!^5000', 
-							  'Rated 2145 on lichess.org. Find out more about me in the "Other/Hobbies" tab!^5000',
-							  'One of my hobbies is drawing. Learn more about me in the "Other/Hobbies" tab!^5000',
-							  'Created the largest Interlingua corpus. Check it out in the "Projects" tab!^5000',
-							  'Make sure to explore the other tabs!'
-					],
-					showCursor: false,
-					smartBackspace: true, // Default value
-					typeSpeed: 25,
-					backSpeed: 25
-				});
-			});
-		</script>
-
-		<!-- <script language='javascript'>
-			$(document).ready(function () {
-				$('.ui.accordion').accordion();
-			});
-		</script> -->
-
-		<nav class='navbar navbar-fixed-top'>
-			<div class='navbar-header'>
-			<a href='/' class='navbar-brand'> 
-				<img src='https://i.ibb.co/3RCzP0V/pixil-frame-0.png' alt = "Logo" width = "45px" height= "45px" style="vertical-align:middle;margin:-12.5px 0px"/> </a>
-			</a>
+	<main>
+		<section class="page-header">
+			<div class="container">
+				<p class="eyebrow">What I've been up to</p>
+				<h1>Experiences</h1>
 			</div>
+		</section>
 
-			<ul class='nav navbar-nav'>
-			<li> <a href='/'> Home </a></li>
-			<li> <a href='/experiences'> Experiences </a></li>
-			<li> <a href='/projects'> Projects </a></li>
-			<li> <a href='/courses'> Courses </a></li>
-			<li> <a href='/timeline'> Timeline </a></li>
-			<li> <a href='/awards'> Awards/Honors </a></li>
-			<li> <a href='/other'> Other/Hobbies </a></li>
-			<li> <a href='/contact'> Contact </a></li>
-			</ul>
-		</nav>
-		
-		<div class="sidenav">
-			<img src='https://i.ibb.co/JCNSRdV/Screen-Shot-2022-10-26-at-3-34-26-PM.png' alt = "Logo" width = "250px" height= "250px"/> </a>
+		<section class="container section-tight">
+			<h2 class="section-title">Full-Time</h2>
+			<div class="stack reveal">
+				<article class="card">
+					<div class="card-header">
+						<div>
+							<h3 class="card-title">Roblox</h3>
+							<p class="card-subtitle">Software Engineer · Economy &gt; Marketplace &gt; Merchandising</p>
+						</div>
+						<span class="card-meta"><i class="far fa-calendar" aria-hidden="true"></i> Sep 2024 – Present</span>
+					</div>
+					<div class="card-body">
+						<ul>
+							<li>Leading a new initiative on ML-generated avatars and text-to-avatar generation.</li>
+							<li>Co-authored peer-reviewed research papers accepted to workshops at top venues (ICSE, CVPR).</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</section>
 
-			<h1><b>Jason Ding</b></h1>
-			<p>Loves brain teasers, coding, and math</p>
-			<i class="icon-school"></i> University of California, Berkeley <br>
-			<i class="icon-book"></i> Majors: Electrical Engineering & Computer Science + Business Administration (M.E.T. Program) <br>
-			<i class="icon-grad"></i> Expected Graduation: May 2024
+		<section class="container section-tight">
+			<h2 class="section-title">Internships &amp; Research</h2>
+			<div class="stack reveal">
+				<article class="card">
+					<div class="card-header">
+						<div>
+							<h3 class="card-title">Citadel Securities</h3>
+							<p class="card-subtitle">Quantitative Trading Intern · FICC Options + Systematic Options</p>
+						</div>
+						<span class="card-meta"><i class="far fa-calendar" aria-hidden="true"></i> May 2024 – Aug 2024</span>
+					</div>
+					<div class="card-body">
+						<ul>
+							<li>Researched the significance, quantitative impact, and market awareness of foreign economic events on US commodities.</li>
+							<li>Designed and implemented a high-speed, interactive full-stack tool that helps traders visualize counterparty toxicity, trading strategies, and positions by analyzing past counterparty actions, using SQL, caching, and Plotly.</li>
+						</ul>
+					</div>
+				</article>
 
-			<hr>
+				<article class="card">
+					<div class="card-header">
+						<div>
+							<h3 class="card-title">Jane Street Capital</h3>
+							<p class="card-subtitle">Quantitative Trading Intern · Equities + Options</p>
+						</div>
+						<span class="card-meta"><i class="far fa-calendar" aria-hidden="true"></i> May 2023 – Aug 2023</span>
+					</div>
+					<div class="card-body">
+						<ul>
+							<li>Developed a new trading strategy in the US equities market by researching international market signals.</li>
+							<li>Enhanced forecasts of options volatility and built a model that surpassed implied market predictions by analyzing earlier-in-the-day predictors.</li>
+						</ul>
+					</div>
+				</article>
 
+				<article class="card">
+					<div class="card-header">
+						<div>
+							<h3 class="card-title">Amazon AWS Lambda</h3>
+							<p class="card-subtitle">Software Development Intern</p>
+						</div>
+						<span class="card-meta"><i class="far fa-calendar" aria-hidden="true"></i> May 2022 – Aug 2022</span>
+					</div>
+					<div class="card-body">
+						<ul>
+							<li>Built a full-stack project on Route 53, CloudFront, API Gateway, S3, Lambda, and DynamoDB.</li>
+							<li>Created a tool that decreased incoming support tickets by 90% and support response wait times by 95%.</li>
+							<li>Wrote React + TypeScript front-end, Java AWS Lambdas, and CDKs.</li>
+						</ul>
+					</div>
+				</article>
 
-			<a href="https://github.com/JasonDing9" class="special-a"><i class="icon-github"></i> Github</a>
-			<a href="https://www.linkedin.com/in/jasonding9/" class="special-a"><i class="icon-linkedin"></i> LinkedIn</a>
-			<a href="mailto:jasonding@berkeley.edu" class="special-a"><i class="icon-email"></i> jasonding@berkeley.edu</a>
-			<!-- <a href="/" class="special-a"><i class="fab fa-discord" color="black" margin-left="-20px" margin-right="10px"></i> FoxEvolved#4824</a> -->
-		</div>
+				<article class="card">
+					<div class="card-header">
+						<div>
+							<h3 class="card-title">Donald Danforth Plant Science Center</h3>
+							<p class="card-subtitle">Project Lead &amp; Computational Linguistics Programmer</p>
+						</div>
+						<span class="card-meta"><i class="far fa-calendar" aria-hidden="true"></i> May 2020 – Jan 2023</span>
+					</div>
+					<div class="card-body">
+						<p class="card-tagline">Built an AI neural-network NLP translator used by 5,000+ people.</p>
+						<ul>
+							<li>Designed and shipped a web crawler that visited 6M+ relevant websites and a high-quality Interlingua translator using Python, BeautifulSoup, PyTorch, and CUDA.</li>
+							<li>Created the Interlingua Corpus Project, with over 1.2M quality-controlled Interlingua sentences (a 4000%+ increase over the previous largest corpus) plus 80,000+ parallel Interlingua-English sentences.</li>
+							<li>Built and optimized the first public, open-source online Interlingua–English translator, scoring a 42.54 BLEU score using techniques like normalization and proper-noun replacement.</li>
+							<li>Learned to develop with React; manage Git, Jupyter, and remote servers; and deploy Python on Heroku.</li>
+						</ul>
+					</div>
+				</article>
 
-		<div class = 'main'>
-			<table width="20%" align="left" cellspacing="2" cellpadding="2" position="fixed" color="gray">
-				
-			</table>
+				<article class="card">
+					<div class="card-header">
+						<div>
+							<h3 class="card-title">Berkeley Artificial Intelligence Research (BAIR)</h3>
+							<p class="card-subtitle">Undergraduate Researcher</p>
+						</div>
+						<span class="card-meta"><i class="far fa-calendar" aria-hidden="true"></i> Jan 2022 – Dec 2022</span>
+					</div>
+					<div class="card-body">
+						<ul>
+							<li>Researched safety, security, and privacy in reinforcement and deep learning with Prof. Dawn Song, including adversarial robustness, anomaly detection, and data augmentation in Python and PyTorch.</li>
+							<li>Co-created an educational course on machine-learning safety.</li>
+						</ul>
+						<div class="card-links">
+							<a class="card-link" href="https://course.mlsafety.org/" target="_blank" rel="noopener">
+								<i class="fas fa-book" aria-hidden="true"></i> ML Safety Course
+							</a>
+						</div>
+					</div>
+				</article>
 
-			<table width="80%" align="center" cellspacing="2" cellpadding="2"
-			border="0" >
-				<tbody>
-					<tr>
-						<td valign="top" align="justify">
-							
-							<div align="center">
-								<h1><b>Experiences</b></h1>
-								
-								<div>
-									<p class="sweet"></p>
-								</div>
-							</div>
-							
-							<br>
+				<article class="card">
+					<div class="card-header">
+						<div>
+							<h3 class="card-title">Optical Radiology Lab at Washington University</h3>
+							<p class="card-subtitle">Lab Assistant &amp; Programmer</p>
+						</div>
+						<span class="card-meta"><i class="far fa-calendar" aria-hidden="true"></i> May 2019 – Aug 2019</span>
+					</div>
+					<div class="card-body">
+						<ul>
+							<li>Built MATLAB and Python programs to analyze and visualize tumor growth and motion in mice over time.</li>
+							<li>Created an app that reduced daily post-scan analysis time from 1 hour to 2–3 minutes.</li>
+							<li>Generated 50+ visual 3D models in MATLAB highlighting tumor locations inside mouse bodies.</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</section>
 
-							<div>
-								<h3><b>Jane Street Capital</b></h3>
-								<h4><b>Role: Quantitative Trading Intern</b></h4>
-								<h6><b>May 2023 - August 2023</b></h6>
-								<div>
-									<ul>
-										<li>Developed a new trading strategy in the US Equities market by researching international market signals.
-										</li>
-										<li>
-											Enhanced forecasts of options volatility and created a model that surpassed implied market prediction’s 
-											through analyzing and researching different predictors that occur earlier in the day.
-										</li>
-									</ul>
-								</div>
-							</div>
+		<section class="container section reveal">
+			<h2 class="section-title">Clubs</h2>
+			<div class="stack">
+				<article class="card">
+					<div class="card-header">
+						<div>
+							<h3 class="card-title">Machine Learning at Berkeley</h3>
+							<p class="card-subtitle">Projects Officer</p>
+						</div>
+						<span class="card-meta"><i class="far fa-calendar" aria-hidden="true"></i> Aug 2023 – May 2024</span>
+					</div>
+					<div class="card-body">
+						<ul>
+							<li>Worked on a time series, forecasting, and NLP summarization project with Arcus to detect and explain outlier events.</li>
+							<li>Sourced industry projects from companies for ML@B members.</li>
+						</ul>
+					</div>
+				</article>
 
-							<hr>
+				<article class="card">
+					<div class="card-header">
+						<div>
+							<h3 class="card-title">Traders at Berkeley</h3>
+							<p class="card-subtitle">Member</p>
+						</div>
+						<span class="card-meta"><i class="far fa-calendar" aria-hidden="true"></i> Spring 2023</span>
+					</div>
+					<div class="card-body">
+						<ul>
+							<li>Coordinated and managed the Berkeley Trading Competition, hosting students from across the country.</li>
+						</ul>
+					</div>
+				</article>
 
-							<div>
-								<h3><b>Amazon AWS Lambda</b></h3>
-								<h4><b>Role: Software Development Intern</b></h4>
-								<h6><b>May 2022 - August 2022</b></h6>
-								<div>
-									<ul>
-										<li>Developed a full-stack project using Route53, Cloudfront, API Gateway, S3, Lambda, and DynamoDB AWS services.
-										</li>
-										<li>
-											Created a tool that decreased incoming support tickets by 90% and support response wait times by 95%.
-										</li>
-										<li>
-											Coded using React, Typescript, and Java to create CDKs, front-end website, and AWS lambda functions.
-										</li>
-									</ul>
-								</div>
-							</div>
+				<article class="card">
+					<div class="card-header">
+						<div>
+							<h3 class="card-title">Ladue Horton Watkins HS Python Club</h3>
+							<p class="card-subtitle">Founder &amp; President</p>
+						</div>
+						<span class="card-meta"><i class="far fa-calendar" aria-hidden="true"></i> 2018 – 2021</span>
+					</div>
+					<div class="card-body">
+						<p>Introduced schoolmates to computer science through collaborative coding projects in Python: self-made lessons, semester-long projects (like a Connect-Four AI), and mini-hackathons.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
 
-							<hr>
+	<footer id="site-footer"></footer>
 
-							<div>
-								<h3><b>Donald Danforth Plant Science Center</b></h3>
-								<h4><b>Role: Project Lead and Key Computational Linguistics Programmer</b></h4>
-								<h6><b>May 2020 - Jan 2023</b></h6>
-								<div>
-									<p><i>Built an AI neural network NLP translator used by over 5,000 people</i></p>
-									<ul>
-										<li>Planned, designed, and followed through on procedures to create a web crawler that visited over 6 million relevant 
-											websites and a high-quality Interlingua translator with Python, BeautifulSoup, PyTorch, and CUDA.
-										</li>
-										<li>
-											Created the Interlingua Corpus Project, a corpus of over 1.2 million quality-controlled Interlingua sentences 
-											(a 4000%+ increase to the second largest Interlingua corpus) by analyzing Interlingua sentences and developing 
-											a web crawler. Also collected 80,000+ parallel Interlingua-English sentences and other useful data.
-										</li>
-										<li>
-											Built and optimized the first ever public and open source Online Interlingua-English Translator, which scored 
-											a 42.54 BLEU score (representing a translator with high quality translations according to Google) by designing 
-											and implementing techniques such as normalization and proper noun replacement.
-										</li>
-										<li>
-											Learned to develop websites in React; use git, Jupyter, Google Colab, remote servers; deploy Python on Heroku.
-										</li>
-
-										<br>
-
-										<a href="http://www.interlinguacorpus.org/" class="special-a"><i class="icon-book"></i> Visit the Interlingua Corpus</a>
-										<br>
-										<a href="https://interlingua-translator.vercel.app/" class="special-a"><i class="icon-translator"></i> Try out the Interlingua-English Translator</a>
-									</ul>
-								</div>
-							</div>
-
-							<hr>
-
-							<div>
-								<h3><b>Optical Radiology Lab at Washington University</b></h3>
-								<h4><b>Role: Lab Assistant and Computer Programmer</b></h4>
-								<h6><b>May 2019 - August 2019</b></h6>
-								<div>
-									<ul>
-										<li>Developed programs in MATLAB and Python to analyze and visualize the growth and motion of tumors in mice over time. 
-										</li>
-										<li>
-											Created an application that reduced the daily post-scan analysis time of optical imaging data from 1 hour to 2-3 minutes, 
-											greatly increasing the efficiency of data analysis for the lab researchers.
-										</li>
-										<li>
-											Built and analyzed over 50 visual 3D models using MATLAB to highlight where tumors exist inside a mouse's body.
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<br>
-
-							<div align="center">
-								<h1><b>Clubs</b></h1>
-							</div>
-							
-							<br>
-
-							<div>
-								<h3><b>Machine Learning At Berkeley</b></h3>
-								<h4><b>Projects Officer</b></h4>
-								<h6><b>Aug 2023 - Present </b></h6>
-								<div>
-									<ul>
-										<li>
-											Worked on a time series, forecasting, and NLP summarization project with Arcus Project to deteect and explain outlier events.
-										</li>
-										<li>
-											Sourced projects from companies for ML@B members to gain industry experience.
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<hr>
-
-							<div>
-								<h3><b>Traders at Berkeley</b></h3>
-								<h6><b>Jan 2023 - Present </b></h6>
-								<div>
-									<ul>
-										<li>
-											Coordinated and managed the Berkeley Trading Competition that hosted students from all over the country.
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<hr>
-
-							<div>
-								<h3><b>Berkeley Artificial Intelligence Research</b></h3>
-								<h4><b>Undergraduate Researcher</b></h4>
-								<h6><b>Janurary 2022 - December 2022</b></h6>
-								<div>
-									<ul>
-										<li>
-											Researched topics with Prof. Dawn Song related to safety, security, and privacy in reinforcement learning and 
-											deep learning alongside adversarial robustness, anomaly detection, and data augmentation using Python and PyTorch.
-										</li>
-										<li>
-											Collaborated to create an educational course that teaches machine learning safety
-										</li>
-									</ul>
-
-									<br>
-
-									<a href="https://course.mlsafety.org/" class="special-a"><i class="icon-book"></i> Visit the machine learning safety website</a>
-								</div>
-							</div>
-
-							<hr>
-
-							<div>
-								<h3><b>Machine Learning at Berkeley (GREP)</b></h3>
-								<h6><b>August 2021 - December 2021 </b></h6>
-								<div>
-									<ul>
-										<li>
-											Studied topics in NLP, computer vision, and reinforcement learning. Researched and presented how GPT-3 works.
-										</li>
-										<li>
-											Optimized a RNN machine learning translator by implementing techniques such as word tokenizing and unknown word prediction, increasing the BLEU score of the language translator by 50%.
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<hr>
-
-							<div>
-								<h3><b>Ladue Horton Watkins High School Python Club</b></h3>
-								<h4><b>Founder and President</b></h4>
-								<div>
-									<p>The club's purpose is to introduce schoolmates to the joys of computer science through collaborative coding projects using the Python programming 
-										language. I teach club members using self-made lesson plans, design and plan semester-long projects such as a Connect-Four-playing AI bot, and 
-										manage mini-hackathons.</p>
-								</div>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-		<script>
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-
-		for (i = 0; i < coll.length; i++) {
-		coll[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var content = this.nextElementSibling;
-			if (content.style.maxHeight){
-			content.style.maxHeight = null;
-			} else {
-			content.style.maxHeight = content.scrollHeight + "px";
-			} 
-		});
-		}
-
-		var onResize = function() {
-			// apply dynamic padding at the top of the body according to the fixed navbar height
-			$("body").css("padding-top", $(".navbar-fixed-top").height());
-		};
-
-		// attach the function to the window resize event
-		$(window).resize(onResize);
-
-		// call it also when the page is ready after load or reload
-		$(function() {
-			onResize();
-		});
-		</script>
-  	</body>
+	<script src="/assets/js/site.js"></script>
+</body>
 </html>
